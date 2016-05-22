@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meeting Schedule</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+	</script>
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+	  		<div class="navbar-header">
+	  			<a class="navbar-brand" href="#"><img src="#" alt=""></a>
+	  		</div>
+	  	
+	  		<ul class="nav navbar-nav navbar-right">
+	  			<li ><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+	  			<li><a href="#">Sign out</a></li>
+	  		</ul>		
+	  	</div>
+	  </nav>
+	  <div class="container">
+	  	<ul class="nav nav-tabs">
+  			<li><a href="#">Home</a></li>
+ 			<li class="active"><a href="#">Profile</a></li>
+  			<li><a href="#">Employee Profiles</a></li>
+		</ul>
+	  </div>
+	<div class="container">  
+		<div class="well well-lg home">	
+			<div class="row">
+		      	<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+					<h1>Create a meeting schedule!</h1>
+				</div>
+			</div>
+				<div class="form meet_sched">
+					<form action="">
+						<div class="row form-group">
+							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 text-right">
+								<label class="label-inverse act" for="">Activities</label>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" >
+								<textarea class="form-control"></textarea>
+							</div>
+						</div>
+							<div class="row form-group">
+							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 text-right">
+								<label class="label-inverse time" for="">Time</label>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-8 col-lg-3" >
+								<div class="input-group">
+									<input class="form-control" type="text">
+									<div class="input-group-btn">
+								       <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM <span class="caret"></span></button>
+								       <ul class="dropdown-menu dropdown-menu-right">
+								        	<li><a href="#">PM</a></li>
+								       </ul>
+								     </div>
+								</div>
+							</div>
+						</div>
+						<div class="row form-group">
+							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-10 text-right">
+								<button class="btn btn-success">Next</button>
+								<input class="btn btn-success" type="submit" value="Create">
+								<input class="btn btn-success" type="reset">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	
+</body>
+</html>
