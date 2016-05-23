@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Profiles</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+	<script src="Chart.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container">
+	  		<div class="navbar-header">
+	  			<a class="navbar-brand" href="#"><img src="#" alt="Logo"></a>
+	  		</div>
+	  	
+	  		<ul class="nav navbar-nav navbar-right">
+	  			<li ><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+	  			<li><a href="#">Sign out</a></li>
+	  		</ul>		
+	  	</div>
+	  </nav>
+	  <div class="container">
+	  	<ul class="nav nav-tabs">
+  			<li><a href="#">Home</a></li>
+ 			<li class="active"><a href="#">Profile</a></li>
+  			<li><a href="#">Employee Profiles</a></li>
+		</ul>
+	  </div>
+	<div class="container">
+		<div class="well well-lg home">
+			<div class="row">
+			
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<canvas id="newcanvas" height="50" width="50"></canvas>
+			  		<script>
+			  			$(document).ready(function(){
+			  				 var ctx = $("#newcanvas").get(0).getContext("2d");
+			  				//pie chart data
+			  				//sum of value=360
+			  				var data = {
+							    datasets: [{
+							        data: [
+							            11,
+							            16,
+							            7,
+							            3,
+							            14
+							        ],
+							        backgroundColor: [
+							            "#FF6384",
+							            "#4BC0C0",
+							            "#FFCE56",
+							            "#E7E9ED",
+							            "#36A2EB"
+							        ],
+							        label: 'My dataset' // for legend
+							    }],
+							    labels: [
+							        "Red",
+							        "Green",
+							        "Yellow",
+							        "Grey",
+							        "Blue"
+							    ]
+							};
+
+			  			var myPieChart = new Chart(ctx,{
+		   					type: 'pie',
+		    				data: data,
+		    				options: {
+		        				elements: {
+		            			arc: {
+		               			borderColor: "#000000"
+		            				}
+		        				}
+		    				}	
+		    			});
+		   			});
+			  		</script>
+	  			</div>
+	  			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+	  				<div class="panel panel-default">
+	  					 <!-- Default panel contents -->
+  						<div class="panel-heading">Employee Data Table</div>
+  						<div class="panel-body">
+    						<p>The employee data table lists the track of commitments made by employees and their progress on it.</p>
+  						</div>
+  						<table class="table table-inverse">
+  							<tr>
+  								<th>#</th>
+  								<td>Employee</td>
+  								<td>Commitments met</td>
+  								<td>Progress bar</td>
+  							</tr>
+  							<tr>
+  								<th scope="row">1</th>
+  								<td>Hasna</td>
+  								<td>8</td>
+  								<td></td>
+  							</tr>
+  							<tr>
+  								<th scope="row">2</th>
+  								<td>Sudin</td>
+  								<td>6</td>
+  								<td></td>
+  							</tr>
+  							<tr>
+  								<th scope="row">3</th>
+  								<td>Nelson</td>
+  								<td>7</td>
+  								<td></td>
+  							</tr>
+  						</table>
+	  				</div>
+	  			</div>	
+			</div>
+		</div>
+	</div>
+	  		
+	  	
+	  
+	  	
+	
+</body>
+</html>
