@@ -2,10 +2,8 @@
 <html>
 <head>
 	<title>Employee Profiles</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
 	<script src="Chart.js"></script>
 
@@ -29,8 +27,8 @@
 	  <div class="container">
 	  	<ul class="nav nav-tabs">
   			<li><a href="#">Home</a></li>
- 			<li class="active"><a href="#">Profile</a></li>
-  			<li><a href="#">Employee Profiles</a></li>
+ 			<li><a href="#">Profile</a></li>
+  			<li class="active"><a href="supervisor_employees.html">Employee Profiles</a></li>
 		</ul>
 	  </div>
 	<div class="container">
@@ -47,27 +45,22 @@
 			  				var data = {
 							    datasets: [{
 							        data: [
-							            11,
-							            16,
+							            8,
 							            7,
-							            3,
-							            14
+							            6
 							        ],
 							        backgroundColor: [
 							            "#FF6384",
 							            "#4BC0C0",
-							            "#FFCE56",
-							            "#E7E9ED",
-							            "#36A2EB"
+							            "#FFCE56"
+							            
 							        ],
 							        label: 'My dataset' // for legend
 							    }],
 							    labels: [
-							        "Red",
-							        "Green",
-							        "Yellow",
-							        "Grey",
-							        "Blue"
+							        "Hasna",
+							        "Nelson",
+							        "Sudin"
 							    ]
 							};
 
@@ -86,37 +79,56 @@
 			  		</script>
 	  			</div>
 	  			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-	  				<div class="panel panel-default">
+	  				<div class="panel panel-success">
 	  					 <!-- Default panel contents -->
-  						<div class="panel-heading">Employee Data Table</div>
+  						<div class="panel-heading panel-success-heading">Employee Data Table</div>
   						<div class="panel-body">
     						<p>The employee data table lists the track of commitments made by employees and their progress on it.</p>
   						</div>
-  						<table class="table table-inverse">
-  							<tr>
-  								<th>#</th>
-  								<td>Employee</td>
-  								<td>Commitments met</td>
-  								<td>Progress bar</td>
-  							</tr>
-  							<tr>
-  								<th scope="row">1</th>
-  								<td>Hasna</td>
-  								<td>8</td>
-  								<td></td>
-  							</tr>
-  							<tr>
-  								<th scope="row">2</th>
-  								<td>Sudin</td>
-  								<td>6</td>
-  								<td></td>
-  							</tr>
-  							<tr>
-  								<th scope="row">3</th>
-  								<td>Nelson</td>
-  								<td>7</td>
-  								<td></td>
-  							</tr>
+  						<table class="table">
+	  						<thead class="thead">
+	  							<tr>
+	  								<th>#</th>
+	  								<th>Employee</th>
+	  								<th>Commitments met</th>
+	  								<th>Progress bar</th>
+	  							</tr>
+	  						</thead>
+	  						<tbody>
+	  							<tr>
+	  								<th scope="row">1</th>
+	  								<td>Hasna</td>
+	  								<td>8</td>
+	  								<td>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> 80%
+                        </div>
+                      </div>
+                    </td>
+	  							</tr>
+	  							<tr>
+	  								<th scope="row">2</th>
+	  								<td>Sudin</td>
+	  								<td>6</td>
+	  								<td>
+                      <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> 60%
+                          </div>
+                      </div>
+                    </td>
+	  							</tr>
+	  							<tr>
+	  								<th scope="row">3</th>
+	  								<td>Nelson</td>
+	  								<td>7</td>
+	  								<td>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> 70%
+                        </div>
+                      </div>
+                    </td>
+	  							</tr>
+  							</tbody>
   						</table>
 	  				</div>
 	  			</div>	
