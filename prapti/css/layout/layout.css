@@ -35,12 +35,15 @@
   background-color: #777777;
 
 }
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-  color: #fff;
-  background-color: #777777;
+.nav-sidebar > li::before{
+	border: 1px solid #777;
+	content: ' ';
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
+
 
 @media (min-width: 768px) {
   .sidebar {
@@ -53,7 +56,7 @@
     padding: 20px;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: #665c5c;
+    background-color: #3a3535;
     border-right: 1px solid #eee;
   }
 }
@@ -62,6 +65,7 @@
 
 .table{
 	background-color: #fff;
+	border: 1px solid black;
 }
 
 .tabledata{
