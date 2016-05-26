@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subordinate</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+    <script src="Chart.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+          <h4><span class="admintext">Admin Panel</span></h4>
+        </div>
+      
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+          <li><a href="#"><span class="admintext">Sign out</span></a></li>
+        </ul>   
+      </div>
+    </nav>
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="admin_page.html">DASHBOARD</a></li>
+            <li><a href="#">Supervisor</a></li>
+            <li><a href="#">Subordinates</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-9 col-md-9 col-md-offset-3 col-lg-10 col-lg-offset-2 main">
+          <div class="container">
+            <div class="col-xs-8 col-md-8 col-lg-6">
+              <h2>Employee performance statistics for the First Quarter</h2>
+              <canvas id="barcanvas" height="200" width="30"></canvas>
+                <script>
+                  $(document).ready(function(){
+                    var ctx = $("#barcanvas").get(0).getContext("2d");
+                  //bar data
+                  var data = {
+                    labels: ["January", "February", "March"],
+                     datasets: [
+                          {
+                              label: "Hasna",
+                              backgroundColor: "rgba(255,99,132,0.2)",
+                              borderColor: "rgba(255,99,132,1)",
+                              borderWidth: 1,
+                              hoverBackgroundColor: "rgba(255,99,132,0.4)",
+                              hoverBorderColor: "rgba(255,99,132,1)",
+                              data: [65, 59, 80],
+                          }
+                      ]
+                  };
+                  var myBarChart = new Chart(ctx, {
+                  type: 'bar',
+                  data: data,
+                  options:{ 
+                      responsive: true,
+                      maintainAspectRatio: false,
+                    }    
+              });
+            }); 
+            </script>
+
+                 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
