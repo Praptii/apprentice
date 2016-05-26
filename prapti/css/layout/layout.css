@@ -8,7 +8,7 @@
 }
 
 .home{
-	min-height: 1000px;
+	min-height: 900px;
 }
 
 .form{
@@ -53,15 +53,17 @@
     padding: 20px;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: #a8a6a6;
+    background-color: #665c5c;
     border-right: 1px solid #eee;
   }
 }
 
-.admintext{
-	color: #5cb85c;
+
+
+.table{
+	background-color: #fff;
 }
 
 .tabledata{
-	margin-top: 30px;
+	margin-top: 40px;
 }
