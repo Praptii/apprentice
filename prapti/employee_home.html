@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+   <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    
+  <!-- Optional theme -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+
+  <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+  <nav class="navbar navbar-default navbar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img src="#" alt="Logo"></a>
+        </div>
+      
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+          <li><a href="#">Sign out</a></li>
+        </ul>   
+      </div>
+    </nav>
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Profile</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="well well-lg home">
+        <div class="row">
+          <div class="col-xs-4 col-sm-4 col-md-8 col-lg-8">
+            <h2>Commitments</h2>
+            <table class="table">
+                <thead class="thead">
+                  <tr>
+                    <th>#</th>
+                    <th>Commitment</th>
+                    <th>Status</th>
+                    <th>Progress bar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>HTML</td>
+                    <td class="status-progress">In progress</td>
+                    <td>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> 80%
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>CSS</td>
+                    <td class="status-complete">Completed</td>
+                    <td>
+                      <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> 60%
+                          </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>JavaScript</td>
+                    <td class="status-abort">Aborted</td>
+                    <td>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> 70%
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 col-sm-4 col-md-8 col-lg-8">
+            <a class="btn btn-success">Add new</a>
+            <a class="btn btn-success">Push to achieved</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>

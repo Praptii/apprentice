@@ -14,11 +14,37 @@
 .form{
 	padding-top: 25px;
 }
+.table{
+	background-color: #fff;
+	border: 1px solid black;
+}
+
+.tabledata{
+	margin-top: 40px;
+}
 
 .thead{
 	background-color: #373a3c;
 	color: #fff;
 }
+
+.thead-admin{
+	background-color: #3e6a3a;
+	color: #fff;
+}
+
+.status-progress{
+	background-color: #FDE74C;
+}
+
+.status-complete{
+	background-color: #9BC53D;
+}
+
+.status-abort{
+	background-color: #E55934;
+}
+
 .nav-sidebar {
   margin-right: -21px; /* 20px padding + 1px border */
   margin-bottom: 20px;
@@ -61,13 +87,24 @@
   }
 }
 
-
-
-.table{
-	background-color: #fff;
-	border: 1px solid black;
+.profile-basic{
+	background-color: #63825d;
+	color:#fff;
+	min-height: 200px;
+	border-radius: 5px;
 }
 
-.tabledata{
-	margin-top: 40px;
+.table-basic> th,td{
+	padding: 10px;
+    text-align: left;
+}
+
+.achievements{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.list-group{
+	width: 400px;
+	color: #000;
 }

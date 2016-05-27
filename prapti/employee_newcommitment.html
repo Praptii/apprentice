@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Commitment</title>
+	 <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    
+  <!-- Optional theme -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+
+  <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+	   <!-- Navigation -->
+  <nav class="navbar navbar-default navbar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img src="#" alt="Logo"></a>
+        </div>
+      
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+          <li><a href="#">Sign out</a></li>
+        </ul>   
+      </div>
+    </nav>
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Profile</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="well well-lg home">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Add a commitment</h1>
+            <div class="form">
+              <form action="#" method="get">
+                <div class="row form-group">
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 text-right">
+                  <label for="date">Date</label>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" >
+                  <input type="date">
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 text-right">
+                  <label for="commitment">Commitment</label>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" >
+                  <textarea name="commit" id="commitdescript" cols="30" rows="10"></textarea>
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 text-right">
+                  <label for="deadline">Deadline</label>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" >
+                  <input type="date">
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 text-right">
+                  <label for="commit-type">Type of commitment</label>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" >
+                  <input type="radio" name="committype" value="technical" checked> Technical
+                  <input type="radio" name="committype" value="nontechnical"> Non-technical
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 text-right">
+                  <input type="submit" value="Add" class="btn btn-success">
+                  </div>
+                </div>
+              </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
