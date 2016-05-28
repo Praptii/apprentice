@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My profile</title>
+   <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    
+  <!-- Optional theme -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+
+  <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="supervisor_home.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+      
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+          <li><a href="login.html">Sign out</a></li>
+        </ul>   
+      </div>
+    </nav>
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li><a href="supervisor_home.html">Home</a></li>
+      <li class="active"><a href="#">Profile</a></li>
+        <li><a href="supervisor_employees.html">Employee Profiles</a></li>
+    </ul>
+    </div>
+    <!-- Central Content-->
+    <div class="container">
+      <div class="well well-lg home">
+        <div class="row">
+          <div class="col-xs-2 col-md-2 col-lg-2">
+            <img src="images/supervisor.png" alt="my_picture">
+          </div>
+          <div class="col-xs-7 col-md-7 col-lg-9">
+            <div class="container-fluid profile-basic">
+              <table class="table-basic">
+              <tr>
+                <td colspan="2"><h3>Basic Information</h3></td>
+              </tr>
+                <tr>
+                  <td>Name</td>
+                  <td>Jon Doe</td>
+                </tr>
+                <tr>
+                  <td>Age</td>
+                  <td>27</td>
+                </tr>
+                <tr>
+                  <td>Sex</td>
+                  <td>Male</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-10 col-md-10 col-lg-11">
+            <div class="container-fluid profile-basic achievements">
+              <h3>Achievements</h3>
+              <h2>Experience</h2>
+              <ul class="list-group">
+                <li class="list-group-item">Trainer, CodeToday (2014-2015)</li>
+                <li class="list-group-item">Ruby Developer, Etech Corp (2010-2012)</li>
+                <li class="list-group-item">Sr Ruby Developer, Etech Corp (2012-2014)</li>
+              </ul>
+              <h2>Expertise</h2>
+              <ul class="list-group">
+                <li class="list-group-item">Ruby</li>
+                <li class="list-group-item">Rails</li>
+                <li class="list-group-item">Sinatra</li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Update Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

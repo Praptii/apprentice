@@ -21,19 +21,19 @@
   <nav class="navbar navbar-default navbar navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"><img src="#" alt="Logo"></a>
+          <a class="navbar-brand" href="employee_home.html"><img src="images/logo.png" alt="Logo"></a>
         </div>
       
         <ul class="nav navbar-nav navbar-right">
           <li ><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
-          <li><a href="#">Sign out</a></li>
+          <li><a href="login.html">Sign out</a></li>
         </ul>   
       </div>
     </nav>
     <div class="container">
       <ul class="nav nav-tabs">
-        <li><a href="#">Home</a></li>
-        <li class="active"><a href="#">Profile</a></li>
+        <li><a href="employee_home.html">Home</a></li>
+        <li><a href="employee_profile.html">Profile</a></li>
       </ul>
     </div>
     <div class="container">
@@ -45,18 +45,18 @@
               <form action="#" method="get">
                 <div class="row form-group">
                   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 text-right">
-                  <label for="date">Date</label>
+                  <label for="currentdate">Date</label>
                   </div>
                   <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" >
-                  <input type="date">
+                  <input type="date" id="currentdate">
                   </div>
                 </div>
                 <div class="row form-group">
                   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 text-right">
-                  <label for="commitment">Commitment</label>
+                  <label for="commitdescript">Commitment</label>
                   </div>
                   <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" >
-                  <textarea name="commit" id="commitdescript" cols="30" rows="10"></textarea>
+                  <textarea id="commitdescript" cols="30" rows="10"></textarea>
                   </div>
                 </div>
                 <div class="row form-group">
@@ -64,16 +64,20 @@
                   <label for="deadline">Deadline</label>
                   </div>
                   <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" >
-                  <input type="date">
+                  <input type="date" id="deadline">
                   </div>
                 </div>
                 <div class="row form-group">
                   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 text-right">
-                  <label for="commit-type">Type of commitment</label>
+                  <label>Type of commitment</label>
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" >
-                  <input type="radio" name="committype" value="technical" checked> Technical
-                  <input type="radio" name="committype" value="nontechnical"> Non-technical
+                  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" >
+                    <label for="technical">Technical</label>
+                    <input type="radio" name="committype" value="technical" id="technical" checked>
+                  </div>
+                  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" >
+                    <label for="non-technical">Non-technical</label> 
+                    <input type="radio" name="committype" value="nontechnical" id="non-technical"> 
                   </div>
                 </div>
                 <div class="row form-group">

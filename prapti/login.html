@@ -19,13 +19,15 @@
 		</script>
 	</head>
 	<body>
-		<div class="container">
-	  		<div class="row">
-	    		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-	     		 <img class="logo" src="#" alt="Logo" />
-	    		</div>
+		<nav class="navbar navbar-default navbar-fixed-top">
+  		<div class="container">
+  	  		<div class="navbar-header">
+  	  			<a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"></a>
+  	  		</div>		
+  	  </div>
+	  </nav>
 	  		
-	  	</div>
+	  	
 			<div class="well margin-top-110px col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-lg-8 ">
 		  		<div class="container-fluid">
 		    		<div class="row form-group">
@@ -33,21 +35,21 @@
 		      				<h1> User Login </h1>
 		      			</div>
 		      		</div>
-			      	<form action="#">
+			      	<form action="admin_page.html" method="get">
 			        	<div class="row form-group">
 			            	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 text-right">
 			              		<label class="label-inverse un" for="username">Username</label>
 			            	</div>
 			            	<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" >
-			             		 <input class="form-control" type="text" name="username" />
+			             		 <input class="form-control" type="text" id="username" value="admin">
 			            	</div>
 			         	</div>
 			          	<div class="row form-group">
 			            	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 text-right">
-			              		<label class="label-inverse pw">Password</label>
+			              		<label class="label-inverse pw" for="pwd">Password</label>
 			            	</div>
 			            	<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
-			              		<input class="form-control" type="password"/><br/>
+			              		<input class="form-control" type="password" id="pwd" value="admin"/><br/>
 			            	</div>
 						</div>	
 			            <div class="row form-group">
@@ -59,6 +61,6 @@
 			        </form>
 				</div>
 			</div>
-	    </div>
+	   
 	</body>
 </html>
