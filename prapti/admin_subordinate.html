@@ -34,14 +34,14 @@
     </nav>
   <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-3 col-sm-3 col-md-2 sidebar">
+        <div class="col-xs-3 col-md-3 col-lg-2 sidebar">
           <ul class="nav nav-sidebar">
             <li><a href="admin_page.html">DASHBOARD</a></li>
             <li><a href="admin_supervisor.html">Supervisor</a></li>
             <li class="active"><a href="#">Subordinates</a></li>
           </ul>
         </div>
-        <div class="col-xs-9 col-md-9 col-md-offset-3 col-lg-10 col-lg-offset-2 main">
+        <div class="col-xs-6 col-xs-offset-3 col-lg-7 col-lg-offset-2 main">
           <div class="container-fluid">
             <div class="row">
               <div class="col-xs-12 col-md-8 col-lg-8">
@@ -49,8 +49,8 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-              <canvas id="newcanvas" height="30" width="30"></canvas>
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <canvas id="newcanvas" height="200" width="200"></canvas>
               <script>
                 $(document).ready(function(){
                    var ctx = $("#newcanvas").get(0).getContext("2d");
@@ -83,6 +83,7 @@
                   data: data,
                   options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                       elements: {
                         arc: {
                           borderColor: "#000000"
@@ -100,7 +101,7 @@
                 <div class="panel-body">
                   <p>The employee data table lists the track of commitments made by employees and their progress on it.</p>
                 </div>
-                <table class="table">
+                <table class="table table-responsive">
                   <thead class="thead">
                     <tr>
                       <th>#</th>
@@ -151,7 +152,8 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div> 
+   </div>
 </body>
 </html>
 

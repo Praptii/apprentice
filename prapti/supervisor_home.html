@@ -33,22 +33,23 @@
 	  </nav>
 	  <div class="container">
 	  	<ul class="nav nav-tabs">
-  			<li class="active"><a href="#">Home</a></li>
- 			<li><a href="supervisor_profile.html">Profile</a></li>
+  			<li class="active"><a href="#supervisor-home" data-toggle="tabs">Home</a></li>
+ 			  <li><a href="#supervisor-profile" data-toggle="tabs">Profile</a></li>
   			<li><a href="supervisor_employees.html">Employee Profiles</a></li>
 		</ul>
-	  </div>
+	  
 	  	<!-- Central Content -->
-	<div class="container">  
+   <div class="tab-content">   
+	<div class="tab-pane" id="supervisor-home">  
 		<div class="well well-lg home">	
 			<h1>Hello!!</h1>
 			<div class="row form-group">
-			<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">		
+			<div class="col-xs-4 col-md-12 col-lg-12">		
 				<a class="btn btn-success" href="meeting_schedule.html">Create a meeting schedule!</a>
 			</div>
 			</div>
 			<div class="row form-group">
-				<div class="col-xs-12 col-sm-4 col-md-12 col-lg-12">	  
+				<div class="col-xs-12 col-md-12 col-lg-12">	  
 					<h2>Meeting schedule for the day!</h2>
 					<table class="table">
               <thead class="thead">
@@ -114,6 +115,61 @@
 			</div>
 		</div>
 	</div>
+  
+  <!-- Supervisor Profile -->
+ 
+  <div class="tab-pane" id="supervisor-profile">
+      <div class="well well-lg home">
+        <div class="row">
+          <div class="col-xs-2 col-md-2 col-lg-2">
+            <img src="images/supervisor.png" alt="my_picture">
+          </div>
+          <div class="col-xs-7 col-md-7 col-lg-9">
+            <div class="container-fluid profile-basic">
+              <table class="table-basic">
+              <tr>
+                <td colspan="2"><h3>Basic Information</h3></td>
+              </tr>
+                <tr>
+                  <td>Name</td>
+                  <td>Jon Doe</td>
+                </tr>
+                <tr>
+                  <td>Age</td>
+                  <td>27</td>
+                </tr>
+                <tr>
+                  <td>Sex</td>
+                  <td>Male</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-10 col-md-10 col-lg-11">
+            <div class="container-fluid profile-basic achievements">
+              <h3>Achievements</h3>
+              <h2>Experience</h2>
+              <ul class="list-group">
+                <li class="list-group-item">Trainer, CodeToday (2014-2015)</li>
+                <li class="list-group-item">Ruby Developer, Etech Corp (2010-2012)</li>
+                <li class="list-group-item">Sr Ruby Developer, Etech Corp (2012-2014)</li>
+              </ul>
+              <h2>Expertise</h2>
+              <ul class="list-group">
+                <li class="list-group-item">Ruby</li>
+                <li class="list-group-item">Rails</li>
+                <li class="list-group-item">Sinatra</li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Update Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
 </body>
 </html>
 

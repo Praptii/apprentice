@@ -6,9 +6,11 @@
 	line-height: 34px; 
 	font-size: 16px;
 }
+
 .navbar-brand > img{
 	height: 20px;
 }
+
 .home{
 	min-height: 700px;
 }
@@ -16,6 +18,7 @@
 .form{
 	padding-top: 25px;
 }
+
 .table{
 	background-color: #fff;
 	border: 1px solid black;
