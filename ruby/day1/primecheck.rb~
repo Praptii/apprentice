@@ -1,9 +1,9 @@
 puts "Enter a number"
 num=gets.to_i
-flag=1
+flag=0
 for i in 2...num
 	if(num%i==0) 
-		flag=0
+		flag=1
 	end
 end
 if(flag==0) 
